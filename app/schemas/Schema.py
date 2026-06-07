@@ -1,6 +1,6 @@
 from enum import Enum
 from pydantic import BaseModel, Field
-from typing import Optional
+from typing import Optional, Any
 
 
 class EventInXDM(BaseModel):
@@ -11,7 +11,7 @@ class EventInXDM(BaseModel):
 
 
 class fullPayload(BaseModel):
-    fullPayload: any
+    fullPayload: dict[str, Any]
 
 
 class EventOutXDM(BaseModel):
