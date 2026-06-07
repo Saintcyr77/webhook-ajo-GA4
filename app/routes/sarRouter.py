@@ -25,11 +25,14 @@ def getEvents(payload:EventInXDM):
       data = obj.getData()
 
       newData = {
+            "xdm": payload.xdm,
             "eventType": payload.eventType,
             "pageURL": payload.pageURL,
             "timestamp": payload.timestamp,
-            "pageName": payload.pageName
+            "pageName": payload.pageName,
+            "source": payload.source
       }
+      EventInXDM.model_validate(newData)
       data.append(newData)
       obj.loadData(data)
       return newData      

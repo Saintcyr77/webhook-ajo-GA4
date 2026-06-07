@@ -1,8 +1,14 @@
 [
   {
-    "eventType": "dasd",
-    "pageURL": "afdsf",
-    "timestamp": "ffdsf",
-    "pageName": "fdsfdsf"
+    "xdm": {
+      "additionalProp1": {
+        "helli": "1"
+      }
+    },
+    "eventType": "stg",
+    "pageURL": "sg",
+    "timestamp": "s",
+    "pageName": "stdsaring",
+    "source": "strinasfg"
   }
 ]

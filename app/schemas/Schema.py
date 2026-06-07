@@ -4,10 +4,12 @@ from typing import Optional, Any
 
 
 class EventInXDM(BaseModel):
+    xdm: dict[str,Any]
     eventType: str 
     pageURL: str
     timestamp: str
     pageName: str
+    source: str
 
 
 class fullPayload(BaseModel):
@@ -15,8 +17,10 @@ class fullPayload(BaseModel):
 
 
 class EventOutXDM(BaseModel):
+    xdm: dict[str,Any]
     eventType: str 
     pageURL: str
     timestamp: str
     pageName: str
+    source: str
 
